@@ -1,0 +1,14 @@
+#!/bin/bash
+cd ..
+echo Creating result directory...
+mkdir result
+cd ..
+echo Copying files...
+cp src/main.py build/result/
+cp -r res build/result/
+cd build
+cp app_py3 result
+cd result
+echo Chmodding app...
+chmod +x app_py3
+echo Done building!
